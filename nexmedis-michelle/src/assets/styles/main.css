@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    background-image: url('../background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    text-align: center;
+    width: 100vw;
+    height: 450px;
+    overflow-x: hidden;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+nav {
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    background: lightgrey;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li.logo {
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    background-color: #BEBEBE;
+    margin: 10px;
+}
+
+nav ul li span {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav ul li button {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    background-color: #BEBEBE;
+    border: 0px;
+}
+
+nav ul li ul.dropdown li {
+    display: block;
+}
+
+nav ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+nav ul li span:hover {
+    background-color: #BEBEBE;
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+}
+
+body input {
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    width: 60%;
+    border: 0;
+}
+
+.container button {
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    background-color: #BEBEBE;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+body div h1 {
+    text-align: left;
+    padding: 20px;
+    font-size: 60px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: 13%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+div.container2 {
+    background-color: white;
+    padding-bottom: 50px;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+body div.container2 h2, div.container7 h2 {
+    font-size: 50px;
+    padding: 30px;
+}
+
+body div.container2 p {
+    font-size: 21px;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.container6 .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.container11 .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 15px;
+    padding: 10px;
+    margin-right: 60px;
+}
+
+div.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    gap: 15px;
+}
+
+div.container3 .card {
+    background-color: #BEBEBE;
+    padding: 20px;
+    max-width: 17.5%;
+}
+
+body div.container3 h3 {
+    font-size: 28px;
+    text-align: left;
+    padding-bottom: 7px;
+}
+
+body div.container3 p {
+    font-size: 16px;
+    text-align: left;
+}
+
+body div.container4 h2, body div.container5 h2, body div.container6 h2 {
+    font-size: 50px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    margin-left: 13%;
+}
+
+body div.container4 h2::after, body div.container5 h2::after, body div.container6 h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1.8%;
+    width: 15%;
+    height: 6px;
+    background-color: #BEBEBE;
+}
+
+.container4 .rect {
+    width: 250px;
+    height: 250px;
+}
+
+.container4 .container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    gap: 15px;
+}
+
+.container5 .container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    gap: 30px;
+}
+
+.container5 button, .container6 button {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #BEBEBE;
+    padding: 5px 10px 5px 10px;
+    margin: 20px 10px 10px 0px;
+    border: 0px;
+}
+
+.container11 button {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: darkgray;
+    padding: 10px 30px 10px 30px;
+    margin: 0px 30px 30px 0px;
+    border: 0px;
+}
+
+.btn {
+    text-align: left;
+    margin-left: 11.5%;
+}
+
+body div.container5 h3 {
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 7px;
+}
+
+body div.container5 p {
+    font-size: 16px;
+    text-align: left;
+}
+
+div.container5 .img {
+    background-color: lightgray;
+    padding: 20px;
+    max-width: 25%;
+    text-align: left;
+}
+
+.image {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.full {
+    width: 250px;
+    height: 250px;
+}
+
+div.container6 .img {
+    background-color: lightgray;
+    width: 250px;
+    text-align: left;
+}
+
+.container6 .container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    gap: 15px;
+}
+
+.container6 p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.container6 .image, .container6 button {
+    margin: 10px;
+}
+
+div.container7 .card {
+    background-color: lightgray;
+    padding: 20px;
+    max-width: 32%;
+}
+
+div.container7 .card-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.container7 p {
+    text-align: left;
+    font-size: 25px;
+}
+
+.container7 button {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #BEBEBE;
+    padding: 10px 20px 10px 20px;
+    margin: 20px 10px 10px 0px;
+    border: 0px;
+}
+
+.container8 h2, .container9 h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.heading-left {
+    text-align: left;
+    width: 35%;
+}
+
+.container8 button, .container9 button {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #BEBEBE;
+    padding: 10px 20px 10px 20px;
+    margin: 20px 10px 10px 0px;
+    border: 0px;
+}
+
+div.container8, div.container9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13%;
+    max-width: 80%;
+    margin: 70px auto;
+}
+
+.container8 .rect, .container9 .rect {
+    width: 500px;
+    height: 500px;
+}
+
+.container8 .about, .container9 .about {
+    margin-bottom: 20px;
+}
+
+.contractor {
+    text-align: center;
+}
+
+div.container10 {
+    background-color: white;
+    padding: 30px 0px 40px 0px;
+    max-width: 30%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container10 .comp {
+    border: 6px solid #BEBEBE;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    padding-right: 20px;
+}
+
+.container10 .memb {
+    margin-left: 20px;
+}
+
+.container11 {
+    background-color: #BEBEBE;
+    width: 100vw;
+    z-index: 0;
+}
+
+.container11 h2.log {
+    background-color: lightgray;
+    padding: 20px 25px;
+    text-align: center;
+    width: 50%;
+}
+
+.container11 h2 {
+    text-align: left;
+}
+
+.footer-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 90px 30px 20px 30px;
+}
+
+.container11 .p {
+    text-align: justify;
+    margin-top: 100px;
+}
+
+.footer1 {
+    width: 20%;
+}
+
+footer div {
+    display: block;
+    background-color: #252424;
+    padding: 25px;
+}
+
+.icon-cont {
+    text-align: left;
+    margin-left: 11.5%;
+}
+
+.p-log {
+    margin-top: 70px;
+    text-align: justify;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor:pointer;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked ~ #slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms;
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+}
+
+#slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#controls {
+    margin: -180px 0px 0 0px;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+}
+
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: lightgrey;
+    margin: 0 10px;
+}
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2) {
+    background: black;
+}
